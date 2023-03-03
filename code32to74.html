@@ -1,0 +1,2648 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+ <div style="background-color:yellow">
+   <p>Click the button to change the background color of this paragraph.</p>
+ <button>Click me!</button>
+</div>
+</body>
+</html>
+ 41  
+code33.html
+@@ -0,0 +1,41 @@
+<!DOCTYpe html>
+<html>
+
+<head>
+    <title>
+        How to run a code on
+        click event in jQuery?
+    </title>
+
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <!-- jQuery code to show the working 
+        of this method -->
+    <script>
+        $(document).ready(function () {
+               $("body").css("text-align", "center");
+               $("h1").css("color", "green");
+               $("p").click(function () {
+               $(this).css("font-size", "20px");
+               $(this).css("color", "green");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>GeeksforGeeks</h1>
+
+    <h3>
+        How to run a code on click event in jQuery?
+    </h3>
+
+    <p onclick="alert('paragraph was clicked')">
+        GeeksforGeeks: A computer science portal
+    </p>
+
+</body>
+
+</html>
+ 42  
+code34.html
+@@ -0,0 +1,42 @@
+<!DOCTYpe html>
+<html>
+
+<head>
+	<title>
+		How to run a code on double-click
+		event in jQuery?
+	</title>
+
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<!-- jQuery code to show the working
+		of this method -->
+	<script>
+		$(document).ready(function () {
+			$("body").css("text-align", "center");
+			$("h1").css("color", "green");
+			$("p").dblclick(function () {
+				$(this).css("font-size", "20px");
+				$(this).css("color", "green");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<h1>GeeksforGeeks</h1>
+
+	<h3>
+		How to run a code on double-click
+		event in jQuery?
+	</h3>
+
+	<p>
+		GeeksforGeeks: A computer science portal
+	</p>
+
+</body>
+
+</html>
+ 44  
+code35.html
+@@ -0,0 +1,44 @@
+<!DOCTYpe html>
+<html>
+
+<head>
+	<title>
+		How to run a code on hover
+		event in jQuery?
+	</title>
+
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			$(document).ready(function () {
+				$("p").hover(function () {
+					$(this).css({
+						backgroundColor: "green",
+						fontSize: "30px",
+						color: "white"
+					});
+				}, function () {
+					$(this).css("background-color", "yellow");
+				});
+			});
+		});
+	</script>
+</head>
+
+<body style="text-align: center;">
+	<h1 style="color: green;">
+		GeeksforGeeks
+	</h1>
+
+	<h3>
+		How to run a code on hover event in jQuery?
+	</h3>
+
+	<p>Welcome to GeeksforGeeks</p>
+
+</body>
+
+</html>
+ 49  
+code36.html
+@@ -0,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		How to run a code on mouseenter
+		event in jQuery?
+	</title>
+
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			$(".main").mouseenter(function () {
+				$(".main").css({
+					background: "green",
+					color: "white"
+				});
+			});
+		});
+	</script>
+
+	<style>
+		body {
+			text-align: center;
+		}
+
+		.main {
+			width: 300px;
+			height: 200px;
+			border: 2px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<h1>GeeksforGeeks</h1>
+
+		<h3>
+			How to run a code on mouseenter
+			event in jQuery?
+		</h3>
+	</div>
+</body>
+
+</html>
+ 53  
+code37.html
+@@ -0,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		How to run code on mouseleave
+		event in jQuery ?
+	</title>
+
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			$(".main").mouseleave(function() {
+				$(".main").css({
+					background: "green",
+					color: "white"
+				});
+			});
+			$(".main").mouseenter(function() {
+				$(".main").css({
+					background: "none",
+					color: "black"
+				});
+			});
+		});
+	</script>
+
+	<style>
+		.main {
+			width: 300px;
+			height: 200px;
+			border: 2px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<div class="main">
+			<h1>GeeksforGeeks</h1>
+
+			<h3>
+				How to run code on mouseleave
+				event in jQuery ?
+			</h3>
+		</div>
+	</center>
+</body>
+
+</html>
+ 37  
+code38.html
+@@ -0,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		How to run the code on keypress
+		event using jQuery ?
+	</title>
+
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			$("textarea").keypress(function () {
+				$("textarea").css({
+					background: "green",
+					color: "white",
+				});
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<center>
+		<h1 style="color: green">GeeksforGeeks</h1>
+		<h3>
+		How to run the code on keypress
+		event using jQuery ?
+		</h3>
+		<textarea rows="5" cols="30"></textarea>
+	</center>
+</body>
+
+</html>
+ 37  
+code39.html
+@@ -0,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		How to run the code on keydown
+		event using jQuery ?
+	</title>
+
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			$("textarea").keydown(function () {
+				$("textarea").css({
+					background: "green",
+					color: "white",
+				});
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<center>
+		<h1 style="color: green">GeeksforGeeks</h1>
+		<h3>
+		How to run the code on keypress
+		event using jQuery ?
+		</h3>
+		<textarea rows="5" cols="30"></textarea>
+	</center>
+</body>
+
+</html>
+ 104  
+code4.html
+@@ -0,0 +1,104 @@
+<html>
+
+<head>
+    <title>jQuery Zebra Stripes Demonstration</title>
+
+    <script type="text/javascript" src=
+        "https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("table tr:nth-child(odd)")
+                .addClass("zebrastripe");
+        });
+    </script>
+
+    <style type="text/css">
+        body,
+        td {
+            font-size: 10pt;
+            text-align: center;
+        }
+
+        h1 {
+            color: green;
+        }
+
+        table {
+            background-color: black;
+            border: 1px black solid;
+            border-collapse: collapse;
+        }
+
+        th {
+            font-size: 15px;
+            padding: 5px 8px;
+            border: 1px outset silver;
+            background-color: rgb(197, 69, 69);
+            color: white;
+        }
+
+        tr {
+            border: 1px outset silver;
+            padding: 5px 8px;
+            background-color: white;
+            margin: 1px;
+        }
+
+        tr.zebrastripe {
+            background-color: green;
+        }
+
+        td {
+            border: 0.5px outset silver;
+            border-collapse: collapse;
+            padding: 5px 8px;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        GeeksforGeeks
+    </h1>
+    <table class="center">
+        <tr>
+            <th>ID</th>
+            <th>Course</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Fork CPP</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>DSA</td>
+            <td>2499</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Fork Java</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Linux</td>
+            <td>599</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Fork Python</td>
+            <td>Free</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+ 37  
+code40.html
+@@ -0,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		How to run the code on keyup
+		event using jQuery ?
+	</title>
+
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			$("textarea").keyup(function () {
+				$("textarea").css({
+					background: "green",
+					color: "white",
+				});
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<center>
+		<h1 style="color: green">GeeksforGeeks</h1>
+		<h3>
+		How to run the code on keyup
+		event using jQuery ?
+		</h3>
+		<textarea rows="5" cols="30"></textarea>
+	</center>
+</body>
+
+</html>
+ 42  
+code41.html
+@@ -0,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		How to run the code on change
+		event using jQuery?
+	</title>
+
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			$("textarea").change(function() {
+				$("textarea").css({
+					background: "green",
+					color: "white"
+				});
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<center>
+		<h1 style="color: green;">
+			GeeksforGeeks
+		</h1>
+
+		<h3>
+			How to run the code on change
+			event using jQuery?
+		</h3>
+
+		<textarea rows="5" cols="30">GeeksforGeeks
+		</textarea>
+	</center>
+</body>
+
+</html>
+ 16  
+code42.html
+@@ -0,0 +1,16 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> This is an example for jQuery focus() Method </title>
+<script src="https://code.jquery.com/jquery-1.10.2.js" > </script>
+</head>
+<body>
+<p> Your Name : <input type="text"> </p>
+<p> Your Password : <input type="password"> </p>
+<input type="submit">
+<script>
+$( "input" ).focus();
+</script>
+</body>
+</html>
+ 16  
+code43.html
+@@ -0,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>jQuery: Attach a function to the blur event</title>
+</head>
+<body>
+<form>
+<input id="field1" type="text" value="Field 1">
+<input id="field2" type="text" value="Field 2">
+</form>
+  <p>Write something in the input Field 1, and then click outside the field to check lose focus.</p>
+</body>
+</html>
+
+ 44  
+code44.html
+@@ -0,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>submit demo</title>
+  <style>
+  p {
+    margin: 0;
+    color: blue;
+  }
+  div,p {
+    margin-left: 10px;
+  }
+  span {
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+</head>
+<body>
+
+<p>Type 'correct' to validate.</p>
+<form action="javascript:alert( 'success!' );">
+  <div>
+    <input type="text">
+    <input type="submit">
+  </div>
+</form>
+<span></span>
+
+<script>
+$( "form" ).submit(function( event ) {
+  if ( $( "input" ).first().val() === "correct" ) {
+    $( "span" ).text( "Validated..." ).show();
+    return;
+  }
+
+  $( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
+  event.preventDefault();
+});
+</script>
+
+</body>
+</html>
+ 44  
+code45.html
+@@ -0,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>submit demo</title>
+  <style>
+  p {
+    margin: 0;
+    color: blue;
+  }
+  div,p {
+    margin-left: 10px;
+  }
+  span {
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+</head>
+<body>
+
+<p>Type 'correct' to validate.</p>
+<form action="javascript:alert( 'success!' );">
+  <div>
+    <input type="text">
+    <input type="submit">
+  </div>
+</form>
+<span></span>
+
+<script>
+$( "form" ).submit(function( event ) {
+  if ( $( "input" ).first().val() === "correct" ) {
+    $( "span" ).text( "Validated..." ).show();
+    return;
+  }
+
+  $( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
+  event.preventDefault();
+});
+</script>
+
+</body>
+</html>
+ 74  
+code46.html
+@@ -0,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+
+	<title>
+		How to run a code on scroll event using jQuery?
+	</title>
+
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<style>
+		h1,
+		h3 {
+			text-align: center;
+		}
+
+		.GFG {
+			width: 350px;
+			height: 150px;
+			border: 1px solid black;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			text-align: justify;
+			display: flex;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green;">
+		GeeksforGeeks
+	</h1>
+
+	<h3>
+		How to run a code on scroll event using jQuery?
+	</h3>
+
+	<div class="GFG">
+		HTML stands for HyperText Markup Language. It
+		is used to design web pages using a markup
+		language. HTML is the combination of Hypertext
+		and Markup language. Hypertext defines the link
+		between the web pages. A markup language is
+		used to define the text document within tag
+		which defines the structure of web pages. This
+		language is used to annotate (make notes for
+		the computer) text so that a machine can
+		understand it and manipulate text accordingly.
+		Most markup languages (e.g. HTML) are
+		human-readable. The language uses tags to
+		define what manipulation has to be done on
+		the text.
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			$(".GFG").scroll(function () {
+				$(".GFG").css({
+					"fontSize": "18px",
+					"color": "green"
+				})
+			});
+		});
+	</script>
+</body>
+
+</html>
+ 22  
+code47.html
+@@ -0,0 +1,22 @@
+
+<html>
+    <head>
+    <title>jQuery Show/Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#btnHide").click(function(){
+            $("p").hide();
+        });
+        $("#btnShow").click(function(){
+            $("p").show();
+        });
+      });
+    </script>
+    </head>
+    <body>
+    <p>Click "Hide Message" !!</p>
+    <button id="btnHide">Hide Message </button>
+    <button id="btnShow">Show Message</button>
+    </body>
+    </html>
+ 28  
+code48.html
+@@ -0,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#box").animate({height: "300px"}, 500, function() {
+           $(this).hide();
+        });
+    });
+   $("#btn2").click(function(){
+        $("#box").animate({height: "300px"}, 500, function() {
+           $(this).show();
+        });
+    });
+});
+</script>
+</head>
+<body>
+
+<button id="btn1">Hide</button>
+<button id="btn2">Show</button>
+
+<div id="box" style="background:#000000;height:300px;width:100px;margin:10px;"></div>
+
+</body>
+</html>
+ 18  
+code49.html
+@@ -0,0 +1,18 @@
+<html>
+ <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1").toggle();
+  });
+});
+</script>
+ </head>
+ <body>
+   <div id="content"/>
+   <p>This paragraph will remain where it is</p>
+   <h1>This will be toggled!</h1>
+   <button>Click here to toggle!</button>
+ </body>
+</html>
+ 13  
+code5.html
+@@ -0,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>Print a page using jQuery</title>
+</head>
+<body>
+<div>
+<a  class="printPage" href="#">Print</a>
+</div>
+</body>
+</html>
+ 14  
+code50.html
+@@ -0,0 +1,14 @@
+<html>
+  <head>
+    <title>jQuery toggle</title>
+  </head>
+  <body>
+    <p>Text above animation</p>
+    <input type="button" class="btn" value="Animate">
+    <div id="animate">
+      <p>Text to animate</p>
+      <div id="box"></div>
+    </div>
+    <p>Text below animation</p>
+  </body>
+</html>
+ 13  
+code51.html
+@@ -0,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>Fade in and fade out all division elements</title>
+</head>
+<body>
+<div style="background:#2E9AFE;width:100%;">My Effect is fadeOut Effect</div>
+<button id="btn2">Fade In (3 Second)</button>
+<button id="btn1">Fade Out (3 Second)</button>
+</body>
+</html>
+ 44  
+code52.html
+@@ -0,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Fade-In and Fade-Out Effects with Different Speeds</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #DDA0DD;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Fading out displayed paragraphs with different speeds
+    $(".out-btn").click(function(){
+        $("p.normal").fadeOut();
+        $("p.fast").fadeOut("fast");
+        $("p.slow").fadeOut("slow");
+        $("p.very-fast").fadeOut(50);
+        $("p.very-slow").fadeOut(2000);
+    });
+
+    // Fading in hidden paragraphs with different speeds
+    $(".in-btn").click(function(){
+        $("p.normal").fadeIn();
+        $("p.fast").fadeIn("fast");
+        $("p.slow").fadeIn("slow");
+        $("p.very-fast").fadeIn(50);
+        $("p.very-slow").fadeIn(2000);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="out-btn">Fade Out Paragraphs</button>
+    <button type="button" class="in-btn">Fade In Paragraphs</button>
+    <p class="very-fast">This paragraph will fade in/out with very fast speed.</p>
+    <p class="normal">This paragraph will fade in/out with default speed.</p>
+    <p class="fast">This paragraph will fade in/out with fast speed.</p>
+    <p class="slow">This paragraph will fade in/out with slow speed.</p>
+    <p class="very-slow">This paragraph will fade in/out with very slow speed.</p>
+</body>
+</html>                                		
+ 27  
+code53.html
+@@ -0,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Fade-Toggle Effect</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #DDA0DD;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Toggles paragraphs display with fading
+    $(".toggle-btn").click(function(){
+        $("p").fadeToggle();
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="toggle-btn">Fade Toggle Paragraphs</button> 
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+</body>
+</html>                                		                                		
+ 34  
+code54.html
+@@ -0,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Fade-Toggle Effect with Different Speeds</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #DDA0DD;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Fade Toggles paragraphs with different speeds
+    $(".toggle-btn").click(function(){
+        $("p.normal").fadeToggle();
+        $("p.fast").fadeToggle("fast");
+        $("p.slow").fadeToggle("slow");
+        $("p.very-fast").fadeToggle(50);
+        $("p.very-slow").fadeToggle(2000);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="toggle-btn">Fade Toggle Paragraphs</button>
+    <p class="very-fast">This paragraph will fade in/out with very fast speed.</p>
+    <p class="normal">This paragraph will fade in/out with default speed.</p>
+    <p class="fast">This paragraph will fade in/out with fast speed.</p>
+    <p class="slow">This paragraph will fade in/out with slow speed.</p>
+    <p class="very-slow">This paragraph will fade in/out with very slow speed.</p>
+</body>
+</html>                                		
+ 31  
+code55.html
+@@ -0,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Fade-To Effect</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        display: none;
+        padding: 15px;
+        background: #DDA0DD;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Fade to paragraphs with different opacity
+    $(".to-btn").click(function(){
+        $("p.none").fadeTo("fast", 0);
+        $("p.partial").fadeTo("slow", 0.5);
+        $("p.complete").fadeTo(2000, 1);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="to-btn">Fade To Hidden Paragraphs</button>
+    <p class="none">This is a paragraph.</p>
+    <p class="partial">This is another paragraph.</p>
+    <p class="complete">This is one more paragraph.</p>
+</body>
+</html>                                		
+ 31  
+code56.html
+@@ -0,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Fade-To Effect</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        display: none;
+        padding: 15px;
+        background: #DDA0DD;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Fade to paragraphs with different opacity
+    $(".to-btn").click(function(){
+        $("p.none").fadeTo("fast", 0);
+        $("p.partial").fadeTo("slow", 0.5);
+        $("p.complete").fadeTo(2000, 1);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="to-btn">Fade To Hidden Paragraphs</button>
+    <p class="none">This is a paragraph.</p>
+    <p class="partial">This is another paragraph.</p>
+    <p class="complete">This is one more paragraph.</p>
+</body>
+</html>                                		
+ 44  
+code57.html
+@@ -0,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Slide-Up and Slide-Down Effects with Different Speeds</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #B0C4DE;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Sliding up displayed paragraphs with different speeds
+    $(".up-btn").click(function(){
+        $("p.normal").slideUp();
+        $("p.fast").slideUp("fast");
+        $("p.slow").slideUp("slow");
+        $("p.very-fast").slideUp(50);
+        $("p.very-slow").slideUp(2000);
+    });
+
+    // Sliding down hidden paragraphs with different speeds
+    $(".down-btn").click(function(){
+        $("p.normal").slideDown();
+        $("p.fast").slideDown("fast");
+        $("p.slow").slideDown("slow");
+        $("p.very-fast").slideDown(50);
+        $("p.very-slow").slideDown(2000);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="up-btn">Slide Up Paragraphs</button> 
+    <button type="button" class="down-btn">Slide Down Paragraphs</button>
+    <p class="very-fast">This paragraph will fade in/out with very fast speed.</p>
+    <p class="normal">This paragraph will fade in/out with default speed.</p>
+    <p class="fast">This paragraph will fade in/out with fast speed.</p>
+    <p class="slow">This paragraph will fade in/out with slow speed.</p>
+    <p class="very-slow">This paragraph will fade in/out with very slow speed.</p>
+</body>
+</html>
+ 0  
+code58.html
+Empty file.
+ 44  
+code59.html
+@@ -0,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Slide-Up and Slide-Down Effects with Different Speeds</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #B0C4DE;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Sliding up displayed paragraphs with different speeds
+    $(".up-btn").click(function(){
+        $("p.normal").slideUp();
+        $("p.fast").slideUp("fast");
+        $("p.slow").slideUp("slow");
+        $("p.very-fast").slideUp(50);
+        $("p.very-slow").slideUp(2000);
+    });
+
+    // Sliding down hidden paragraphs with different speeds
+    $(".down-btn").click(function(){
+        $("p.normal").slideDown();
+        $("p.fast").slideDown("fast");
+        $("p.slow").slideDown("slow");
+        $("p.very-fast").slideDown(50);
+        $("p.very-slow").slideDown(2000);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="up-btn">Slide Up Paragraphs</button> 
+    <button type="button" class="down-btn">Slide Down Paragraphs</button>
+    <p class="very-fast">This paragraph will fade in/out with very fast speed.</p>
+    <p class="normal">This paragraph will fade in/out with default speed.</p>
+    <p class="fast">This paragraph will fade in/out with fast speed.</p>
+    <p class="slow">This paragraph will fade in/out with slow speed.</p>
+    <p class="very-slow">This paragraph will fade in/out with very slow speed.</p>
+</body>
+</html>
+ 14  
+code6.html
+@@ -0,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>Make first word bold of all elements</title>
+</head>
+<body>
+  <p>PHP Exercises</p>
+  <p>Python Exercises</p>
+  <p>JavaScript Exercises</p>
+  <p>jQuery Exercises</p>
+</body>
+</html>
+ 28  
+code60.html
+@@ -0,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Animation Effects</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    img{
+        position: relative; /* Required to move element */
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("img").animate({
+            left: 300
+        });
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button">Start Animation</button>
+    <p>
+    	<img src="/examples/images/mushroom.jpg" alt="Mushroom">
+    </p>
+</body>
+</html>
+ 170  
+code61.html
+Large diffs are not rendered by default.
+
+ 169  
+code62.html
+Large diffs are not rendered by default.
+
+ 169  
+code63.html
+Large diffs are not rendered by default.
+
+ 164  
+code64.html
+Large diffs are not rendered by default.
+
+ 170  
+code65.html
+Large diffs are not rendered by default.
+
+ 173  
+code66.html
+Large diffs are not rendered by default.
+
+ 169  
+code67.html
+@@ -0,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Live Demo: jQuery Method Chaining Exceptions</title>
+	<meta name="description" content="Try and test HTML code online in a simple and easy way using our free HTML editor and see the results in real-time." />
+		<meta charset="UTF-8" />
+	<meta property="og:title" content="jQuery Method Chaining Exceptions" />
+    <meta property="og:description" content="View the live example as well as try and test it using the online HTML editor." />
+	<meta property="fb:admins" content="100001054961582" />
+	<meta property="fb:app_id" content="1404574483159557" />
+	<meta property="og:image" content="/lib/images/signature.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" href="/lib/editor-5.5/css/codemirror.css" />
+    <link rel="stylesheet" href="/lib/icomoon/style.css">
+	<link rel="stylesheet" href="/lib/editor-5.5/css/default-1.4.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/lib/editor-5.5/js/codemirror.js"></script>
+	<script src="/lib/editor-5.5/js/utility.js"></script>
+	<script src="/lib/editor-5.5/mode/xml.js"></script>    
+	<script src="/lib/editor-5.5/mode/javascript.js"></script>
+	<script src="/lib/editor-5.5/mode/css.js"></script>
+	<script src="/lib/editor-5.5/mode/htmlmixed.js"></script>
+	<script src="/lib/editor-5.5/js/active-line.js"></script>
+	<script>
+		$(document).ready(function(){
+        	updatePreview();
+    	});    
+	</script>
+	<style>
+		.CodeMirror{font-size: 15px;line-height: normal;font-family: consolas,monospace;background: url("/lib/images/gutter-bg.gif") repeat-y -26px 0 transparent;}
+		.CodeMirror-activeline-background {background: #e8f2ff !important;}
+		.CodeMirror-scroll{overflow:auto;}
+		#carbonads{border: none !important;}
+	</style>
+		<!--Google Analytics-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-381VQH4NHT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-381VQH4NHT');
+</script>	<!--End:Google Analytics-->
+</head>
+<body>
+	<div class="header-wrapper">
+		<div class="header clearfix">
+			<div class="top-ad-box">
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9107540490929984"
+     crossorigin="anonymous"></script>
+<!-- Responsive Leaderboard -->
+<ins class="adsbygoogle"
+     style="display:block;width:100%;max-width:728px;height:90px"
+     data-ad-client="ca-pub-9107540490929984"
+     data-ad-slot="4302666817"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>							</div>
+			<div class="logo">
+				<img src="lib/images/codelab-logo.svg" alt="CodeLab" />
+			</div>
+			<div class="control-bar">
+				<div class="buttons">
+					<a onClick="updatePreview();" class="show-output">Show Output</a>
+					<a onClick="newWindow();" class="new-window" title="Show Output in Blank Tab"><span class="icon-new-window"></span></a>
+					<a onClick="downloadCode();" class="download-code" title="Download Source Code"><span class="icon-download"></span></a>
+					<a onClick="toggleView();" class="toggle-view" title="Change Editor Layout"><span class="icon-screen-rotation"></span></a>
+				</div>                            
+			</div>               
+		</div>
+	</div>
+	<div class="frame-box vr">
+		<div class="pane-wrapper clearfix">
+			<div class="pane" id="code-pane">
+				<div class="outer-area">
+					<span class="show-preview-pane">&nbsp;</span>
+					<div class="inner-area">
+						<input type="hidden" id="current-code" name="current-code" />
+						<textarea id="code" name="code">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;jQuery Method Chaining Exceptions&lt;/title&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;style&gt;
+    .test{
+		padding: 15px;
+        background: yellow;
+    }
+&lt;/style&gt;
+&lt;script&gt;
+$(document).ready(function(){
+    $(&quot;button&quot;).click(function(){
+        // This will work
+        $(&quot;h1&quot;).html(&quot;Hello World!&quot;).addClass(&quot;test&quot;).fadeOut(1000);
+
+        // This will NOT work
+        $(&quot;p&quot;).html().addClass(&quot;test&quot;);
+    });
+});
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;button type=&quot;button&quot;&gt;Start Chaining&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>	
+						<script>
+							var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+								mode: "text/html",
+								tabMode: "indent",
+								styleActiveLine: true,
+								lineNumbers: true,
+								lineWrapping: true
+							});
+						</script>									
+					</div>
+				</div>
+			</div>
+			<div class="pane" id="preview-pane">
+				<div class="outer-wrapper">
+					<span class="hide-preview-pane">&nbsp;</span>
+					<div class="output-area">
+						<iframe id="preview" name="preview"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="codelab-footer clearfix">		
+		<a href="/codelab.php?topic=sql&amp;file=select-all" class="switch-mode">Switch to SQL Mode</a>
+		<label class="auto-update"><input type="checkbox" id="check" /> Auto update</label>
+		<script>
+			var delay;
+			var checkbox = document.getElementById("check");
+			editor.on("change", function(){
+				editor.refresh();
+				if(checkbox.checked==true){            
+					clearTimeout(delay);
+					delay = setTimeout(updatePreview, 300); // Don't use parenthesis 
+				}
+			});
+			//setTimeout(updatePreview, 300);
+		</script>
+		<div class="social-widget-wrapper">
+			<!-- Social widget -->
+			<p class="social-link">Share this example with 
+	<a id="facebook-share-btn" href="https://facebook.com/sharer.php?u=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dmethod-chaining-exceptions" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Facebook</a>, 
+	<a id="twitter-share-btn" href="https://twitter.com/share?text=jQuery+Method+Chaining+Exceptions+-+&amp;url=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dmethod-chaining-exceptions" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Twitter</a>, 
+	<a id="google-share-btn" href="https://mail.google.com/mail/?view=cm&fs=1&su=jQuery+Method+Chaining+Exceptions&amp;body=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dmethod-chaining-exceptions" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600,top=150, left='+((screen.width/2)-300));return false;">Gmail</a>. Please give us a 
+	<a id="facebook-like-btn" href="/like.php" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=250,width=600,top=150, left='+((screen.width/2)-300));return false;">Like</a>, if you find it helpful.
+</p>    
+			<!-- End:Social widget -->
+		</div>
+	</div>
+
+    <form id="download-form" action="examples/bin/download.php" method="post" class="hidden-form">
+    	<input type="hidden" id="download-value" name="download-value" />
+    </form>
+    <form id="fullscreen-form" action="examples/fullscreen/output.php" method="post" target="_blank" class="hidden-form">
+    	<input type="hidden" id="code-value" name="code-value" />
+    </form>
+
+</body>
+</html>
+
+ 166  
+code68.html
+@@ -0,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Live Demo: Example of jQuery Effect Method without Callback Function</title>
+	<meta name="description" content="Try and test HTML code online in a simple and easy way using our free HTML editor and see the results in real-time." />
+		<meta charset="UTF-8" />
+	<meta property="og:title" content="Example of jQuery Effect Method without Callback Function" />
+    <meta property="og:description" content="View the live example as well as try and test it using the online HTML editor." />
+	<meta property="fb:admins" content="100001054961582" />
+	<meta property="fb:app_id" content="1404574483159557" />
+	<meta property="og:image" content="/lib/images/signature.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" href="/lib/editor-5.5/css/codemirror.css" />
+    <link rel="stylesheet" href="/lib/icomoon/style.css">
+	<link rel="stylesheet" href="/lib/editor-5.5/css/default-1.4.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/lib/editor-5.5/js/codemirror.js"></script>
+	<script src="/lib/editor-5.5/js/utility.js"></script>
+	<script src="/lib/editor-5.5/mode/xml.js"></script>    
+	<script src="/lib/editor-5.5/mode/javascript.js"></script>
+	<script src="/lib/editor-5.5/mode/css.js"></script>
+	<script src="/lib/editor-5.5/mode/htmlmixed.js"></script>
+	<script src="/lib/editor-5.5/js/active-line.js"></script>
+	<script>
+		$(document).ready(function(){
+        	updatePreview();
+    	});    
+	</script>
+	<style>
+		.CodeMirror{font-size: 15px;line-height: normal;font-family: consolas,monospace;background: url("/lib/images/gutter-bg.gif") repeat-y -26px 0 transparent;}
+		.CodeMirror-activeline-background {background: #e8f2ff !important;}
+		.CodeMirror-scroll{overflow:auto;}
+		#carbonads{border: none !important;}
+	</style>
+		<!--Google Analytics-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-381VQH4NHT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-381VQH4NHT');
+</script>	<!--End:Google Analytics-->
+</head>
+<body>
+	<div class="header-wrapper">
+		<div class="header clearfix">
+			<div class="top-ad-box">
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9107540490929984"
+     crossorigin="anonymous"></script>
+<!-- Responsive Leaderboard -->
+<ins class="adsbygoogle"
+     style="display:block;width:100%;max-width:728px;height:90px"
+     data-ad-client="ca-pub-9107540490929984"
+     data-ad-slot="4302666817"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>							</div>
+			<div class="logo">
+				<img src="lib/images/codelab-logo.svg" alt="CodeLab" />
+			</div>
+			<div class="control-bar">
+				<div class="buttons">
+					<a onClick="updatePreview();" class="show-output">Show Output</a>
+					<a onClick="newWindow();" class="new-window" title="Show Output in Blank Tab"><span class="icon-new-window"></span></a>
+					<a onClick="downloadCode();" class="download-code" title="Download Source Code"><span class="icon-download"></span></a>
+					<a onClick="toggleView();" class="toggle-view" title="Change Editor Layout"><span class="icon-screen-rotation"></span></a>
+				</div>                            
+			</div>               
+		</div>
+	</div>
+	<div class="frame-box vr">
+		<div class="pane-wrapper clearfix">
+			<div class="pane" id="code-pane">
+				<div class="outer-area">
+					<span class="show-preview-pane">&nbsp;</span>
+					<div class="inner-area">
+						<input type="hidden" id="current-code" name="current-code" />
+						<textarea id="code" name="code">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;Example of jQuery Effect Method without Callback Function&lt;/title&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;style&gt;
+    p{
+        background:yellow;
+        font-size: 24px;
+        padding:20px;
+    }
+&lt;/style&gt;
+&lt;script&gt;
+$(document).ready(function(){
+    $(&quot;button&quot;).click(function(){
+        $(&quot;p&quot;).slideToggle(&quot;slow&quot;);
+        alert(&quot;The slide toggle effect has completed.&quot;);
+    });   
+});
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;This is paragraph.&lt;/p&gt;
+    &lt;button type=&quot;button&quot;&gt;Click me&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>	
+						<script>
+							var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+								mode: "text/html",
+								tabMode: "indent",
+								styleActiveLine: true,
+								lineNumbers: true,
+								lineWrapping: true
+							});
+						</script>									
+					</div>
+				</div>
+			</div>
+			<div class="pane" id="preview-pane">
+				<div class="outer-wrapper">
+					<span class="hide-preview-pane">&nbsp;</span>
+					<div class="output-area">
+						<iframe id="preview" name="preview"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="codelab-footer clearfix">		
+		<a href="/codelab.php?topic=sql&amp;file=select-all" class="switch-mode">Switch to SQL Mode</a>
+		<label class="auto-update"><input type="checkbox" id="check" /> Auto update</label>
+		<script>
+			var delay;
+			var checkbox = document.getElementById("check");
+			editor.on("change", function(){
+				editor.refresh();
+				if(checkbox.checked==true){            
+					clearTimeout(delay);
+					delay = setTimeout(updatePreview, 300); // Don't use parenthesis 
+				}
+			});
+			//setTimeout(updatePreview, 300);
+		</script>
+		<div class="social-widget-wrapper">
+			<!-- Social widget -->
+			<p class="social-link">Share this example with 
+	<a id="facebook-share-btn" href="https://facebook.com/sharer.php?u=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dmethod-without-callback" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Facebook</a>, 
+	<a id="twitter-share-btn" href="https://twitter.com/share?text=Example+of+jQuery+Effect+Method+without+Callback+Function+-+&amp;url=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dmethod-without-callback" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Twitter</a>, 
+	<a id="google-share-btn" href="https://mail.google.com/mail/?view=cm&fs=1&su=Example+of+jQuery+Effect+Method+without+Callback+Function&amp;body=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dmethod-without-callback" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600,top=150, left='+((screen.width/2)-300));return false;">Gmail</a>. Please give us a 
+	<a id="facebook-like-btn" href="/like.php" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=250,width=600,top=150, left='+((screen.width/2)-300));return false;">Like</a>, if you find it helpful.
+</p>    
+			<!-- End:Social widget -->
+		</div>
+	</div>
+
+    <form id="download-form" action="examples/bin/download.php" method="post" class="hidden-form">
+    	<input type="hidden" id="download-value" name="download-value" />
+    </form>
+    <form id="fullscreen-form" action="examples/fullscreen/output.php" method="post" target="_blank" class="hidden-form">
+    	<input type="hidden" id="code-value" name="code-value" />
+    </form>
+
+</body>
+</html>
+
+ 167  
+code69.html
+@@ -0,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Live Demo: Example of jQuery Effect Method with Callback Function</title>
+	<meta name="description" content="Try and test HTML code online in a simple and easy way using our free HTML editor and see the results in real-time." />
+		<meta charset="UTF-8" />
+	<meta property="og:title" content="Example of jQuery Effect Method with Callback Function" />
+    <meta property="og:description" content="View the live example as well as try and test it using the online HTML editor." />
+	<meta property="fb:admins" content="100001054961582" />
+	<meta property="fb:app_id" content="1404574483159557" />
+	<meta property="og:image" content="/lib/images/signature.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" href="/lib/editor-5.5/css/codemirror.css" />
+    <link rel="stylesheet" href="/lib/icomoon/style.css">
+	<link rel="stylesheet" href="/lib/editor-5.5/css/default-1.4.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/lib/editor-5.5/js/codemirror.js"></script>
+	<script src="/lib/editor-5.5/js/utility.js"></script>
+	<script src="/lib/editor-5.5/mode/xml.js"></script>    
+	<script src="/lib/editor-5.5/mode/javascript.js"></script>
+	<script src="/lib/editor-5.5/mode/css.js"></script>
+	<script src="/lib/editor-5.5/mode/htmlmixed.js"></script>
+	<script src="/lib/editor-5.5/js/active-line.js"></script>
+	<script>
+		$(document).ready(function(){
+        	updatePreview();
+    	});    
+	</script>
+	<style>
+		.CodeMirror{font-size: 15px;line-height: normal;font-family: consolas,monospace;background: url("/lib/images/gutter-bg.gif") repeat-y -26px 0 transparent;}
+		.CodeMirror-activeline-background {background: #e8f2ff !important;}
+		.CodeMirror-scroll{overflow:auto;}
+		#carbonads{border: none !important;}
+	</style>
+		<!--Google Analytics-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-381VQH4NHT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-381VQH4NHT');
+</script>	<!--End:Google Analytics-->
+</head>
+<body>
+	<div class="header-wrapper">
+		<div class="header clearfix">
+			<div class="top-ad-box">
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9107540490929984"
+     crossorigin="anonymous"></script>
+<!-- Responsive Leaderboard -->
+<ins class="adsbygoogle"
+     style="display:block;width:100%;max-width:728px;height:90px"
+     data-ad-client="ca-pub-9107540490929984"
+     data-ad-slot="4302666817"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>							</div>
+			<div class="logo">
+				<img src="lib/images/codelab-logo.svg" alt="CodeLab" />
+			</div>
+			<div class="control-bar">
+				<div class="buttons">
+					<a onClick="updatePreview();" class="show-output">Show Output</a>
+					<a onClick="newWindow();" class="new-window" title="Show Output in Blank Tab"><span class="icon-new-window"></span></a>
+					<a onClick="downloadCode();" class="download-code" title="Download Source Code"><span class="icon-download"></span></a>
+					<a onClick="toggleView();" class="toggle-view" title="Change Editor Layout"><span class="icon-screen-rotation"></span></a>
+				</div>                            
+			</div>               
+		</div>
+	</div>
+	<div class="frame-box vr">
+		<div class="pane-wrapper clearfix">
+			<div class="pane" id="code-pane">
+				<div class="outer-area">
+					<span class="show-preview-pane">&nbsp;</span>
+					<div class="inner-area">
+						<input type="hidden" id="current-code" name="current-code" />
+						<textarea id="code" name="code">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;Example of jQuery Effect Method with Callback Function&lt;/title&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;style&gt;
+    p{
+        background:yellow;
+        font-size: 24px;
+        padding:20px;
+    }
+&lt;/style&gt;
+&lt;script&gt;
+$(document).ready(function(){
+    $(&quot;button&quot;).click(function(){
+        $(&quot;p&quot;).slideToggle(&quot;slow&quot;, function(){
+            alert(&quot;The slide toggle effect has completed.&quot;);
+        });
+    });   
+});
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;This is paragraph.&lt;/p&gt;
+    &lt;button type=&quot;button&quot;&gt;Click me&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>	
+						<script>
+							var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+								mode: "text/html",
+								tabMode: "indent",
+								styleActiveLine: true,
+								lineNumbers: true,
+								lineWrapping: true
+							});
+						</script>									
+					</div>
+				</div>
+			</div>
+			<div class="pane" id="preview-pane">
+				<div class="outer-wrapper">
+					<span class="hide-preview-pane">&nbsp;</span>
+					<div class="output-area">
+						<iframe id="preview" name="preview"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="codelab-footer clearfix">		
+		<a href="/codelab.php?topic=sql&amp;file=select-all" class="switch-mode">Switch to SQL Mode</a>
+		<label class="auto-update"><input type="checkbox" id="check" /> Auto update</label>
+		<script>
+			var delay;
+			var checkbox = document.getElementById("check");
+			editor.on("change", function(){
+				editor.refresh();
+				if(checkbox.checked==true){            
+					clearTimeout(delay);
+					delay = setTimeout(updatePreview, 300); // Don't use parenthesis 
+				}
+			});
+			//setTimeout(updatePreview, 300);
+		</script>
+		<div class="social-widget-wrapper">
+			<!-- Social widget -->
+			<p class="social-link">Share this example with 
+	<a id="facebook-share-btn" href="https://facebook.com/sharer.php?u=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dmethod-with-callback" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Facebook</a>, 
+	<a id="twitter-share-btn" href="https://twitter.com/share?text=Example+of+jQuery+Effect+Method+with+Callback+Function+-+&amp;url=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dmethod-with-callback" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Twitter</a>, 
+	<a id="google-share-btn" href="https://mail.google.com/mail/?view=cm&fs=1&su=Example+of+jQuery+Effect+Method+with+Callback+Function&amp;body=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dmethod-with-callback" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600,top=150, left='+((screen.width/2)-300));return false;">Gmail</a>. Please give us a 
+	<a id="facebook-like-btn" href="/like.php" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=250,width=600,top=150, left='+((screen.width/2)-300));return false;">Like</a>, if you find it helpful.
+</p>    
+			<!-- End:Social widget -->
+		</div>
+	</div>
+
+    <form id="download-form" action="examples/bin/download.php" method="post" class="hidden-form">
+    	<input type="hidden" id="download-value" name="download-value" />
+    </form>
+    <form id="fullscreen-form" action="examples/fullscreen/output.php" method="post" target="_blank" class="hidden-form">
+    	<input type="hidden" id="code-value" name="code-value" />
+    </form>
+
+</body>
+</html>
+
+ 13  
+code7.html
+@@ -0,0 +1,13 @@
+ <!DOCTYPE html>
+  <html>
+  <head>
+  <script src="https://code.jquery.com/jquery-git.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Create a div using jQuery with style tag.</title>
+  </head>
+  <body>
+  <p>This domain is established to be used for illustrative examples in documents. You may use this domain in examples without prior coordination or asking for permission.</p> 
+  <input type="button" value="Click to add new division" onclick="new_div()" />
+</body>
+  </html>
+ 173  
+code70.html
+@@ -0,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Live Demo: Example of jQuery Callback Executed Multiple Times</title>
+	<meta name="description" content="Try and test HTML code online in a simple and easy way using our free HTML editor and see the results in real-time." />
+		<meta charset="UTF-8" />
+	<meta property="og:title" content="Example of jQuery Callback Executed Multiple Times" />
+    <meta property="og:description" content="View the live example as well as try and test it using the online HTML editor." />
+	<meta property="fb:admins" content="100001054961582" />
+	<meta property="fb:app_id" content="1404574483159557" />
+	<meta property="og:image" content="/lib/images/signature.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" href="/lib/editor-5.5/css/codemirror.css" />
+    <link rel="stylesheet" href="/lib/icomoon/style.css">
+	<link rel="stylesheet" href="/lib/editor-5.5/css/default-1.4.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/lib/editor-5.5/js/codemirror.js"></script>
+	<script src="/lib/editor-5.5/js/utility.js"></script>
+	<script src="/lib/editor-5.5/mode/xml.js"></script>    
+	<script src="/lib/editor-5.5/mode/javascript.js"></script>
+	<script src="/lib/editor-5.5/mode/css.js"></script>
+	<script src="/lib/editor-5.5/mode/htmlmixed.js"></script>
+	<script src="/lib/editor-5.5/js/active-line.js"></script>
+	<script>
+		$(document).ready(function(){
+        	updatePreview();
+    	});    
+	</script>
+	<style>
+		.CodeMirror{font-size: 15px;line-height: normal;font-family: consolas,monospace;background: url("/lib/images/gutter-bg.gif") repeat-y -26px 0 transparent;}
+		.CodeMirror-activeline-background {background: #e8f2ff !important;}
+		.CodeMirror-scroll{overflow:auto;}
+		#carbonads{border: none !important;}
+	</style>
+		<!--Google Analytics-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-381VQH4NHT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-381VQH4NHT');
+</script>	<!--End:Google Analytics-->
+</head>
+<body>
+	<div class="header-wrapper">
+		<div class="header clearfix">
+			<div class="top-ad-box">
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9107540490929984"
+     crossorigin="anonymous"></script>
+<!-- Responsive Leaderboard -->
+<ins class="adsbygoogle"
+     style="display:block;width:100%;max-width:728px;height:90px"
+     data-ad-client="ca-pub-9107540490929984"
+     data-ad-slot="4302666817"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>							</div>
+			<div class="logo">
+				<img src="lib/images/codelab-logo.svg" alt="CodeLab" />
+			</div>
+			<div class="control-bar">
+				<div class="buttons">
+					<a onClick="updatePreview();" class="show-output">Show Output</a>
+					<a onClick="newWindow();" class="new-window" title="Show Output in Blank Tab"><span class="icon-new-window"></span></a>
+					<a onClick="downloadCode();" class="download-code" title="Download Source Code"><span class="icon-download"></span></a>
+					<a onClick="toggleView();" class="toggle-view" title="Change Editor Layout"><span class="icon-screen-rotation"></span></a>
+				</div>                            
+			</div>               
+		</div>
+	</div>
+	<div class="frame-box vr">
+		<div class="pane-wrapper clearfix">
+			<div class="pane" id="code-pane">
+				<div class="outer-area">
+					<span class="show-preview-pane">&nbsp;</span>
+					<div class="inner-area">
+						<input type="hidden" id="current-code" name="current-code" />
+						<textarea id="code" name="code">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;Example of jQuery Callback Executed Multiple Times&lt;/title&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;style&gt;
+    h1{
+        display:none;
+        background:red;
+        padding:20px;
+    }
+    p{
+        background:yellow;
+        font-size: 24px;
+        padding:20px;
+    }
+&lt;/style&gt;
+&lt;script&gt;
+$(document).ready(function(){
+    $(&quot;button&quot;).click(function(){
+        $(&quot;h1, p&quot;).slideToggle(&quot;slow&quot;, function(){
+            alert(&quot;The slide toggle effect has completed.&quot;);
+        });
+    });   
+});
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;This is heading&lt;/h1&gt;
+    &lt;p&gt;This is paragraph.&lt;/p&gt;
+    &lt;button type=&quot;button&quot;&gt;Click me&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;                                		</textarea>	
+						<script>
+							var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+								mode: "text/html",
+								tabMode: "indent",
+								styleActiveLine: true,
+								lineNumbers: true,
+								lineWrapping: true
+							});
+						</script>									
+					</div>
+				</div>
+			</div>
+			<div class="pane" id="preview-pane">
+				<div class="outer-wrapper">
+					<span class="hide-preview-pane">&nbsp;</span>
+					<div class="output-area">
+						<iframe id="preview" name="preview"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="codelab-footer clearfix">		
+		<a href="/codelab.php?topic=sql&amp;file=select-all" class="switch-mode">Switch to SQL Mode</a>
+		<label class="auto-update"><input type="checkbox" id="check" /> Auto update</label>
+		<script>
+			var delay;
+			var checkbox = document.getElementById("check");
+			editor.on("change", function(){
+				editor.refresh();
+				if(checkbox.checked==true){            
+					clearTimeout(delay);
+					delay = setTimeout(updatePreview, 300); // Don't use parenthesis 
+				}
+			});
+			//setTimeout(updatePreview, 300);
+		</script>
+		<div class="social-widget-wrapper">
+			<!-- Social widget -->
+			<p class="social-link">Share this example with 
+	<a id="facebook-share-btn" href="https://facebook.com/sharer.php?u=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dcallback-executed-multiple-times" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Facebook</a>, 
+	<a id="twitter-share-btn" href="https://twitter.com/share?text=Example+of+jQuery+Callback+Executed+Multiple+Times+-+&amp;url=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dcallback-executed-multiple-times" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Twitter</a>, 
+	<a id="google-share-btn" href="https://mail.google.com/mail/?view=cm&fs=1&su=Example+of+jQuery+Callback+Executed+Multiple+Times&amp;body=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dcallback-executed-multiple-times" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600,top=150, left='+((screen.width/2)-300));return false;">Gmail</a>. Please give us a 
+	<a id="facebook-like-btn" href="/like.php" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=250,width=600,top=150, left='+((screen.width/2)-300));return false;">Like</a>, if you find it helpful.
+</p>    
+			<!-- End:Social widget -->
+		</div>
+	</div>
+
+    <form id="download-form" action="examples/bin/download.php" method="post" class="hidden-form">
+    	<input type="hidden" id="download-value" name="download-value" />
+    </form>
+    <form id="fullscreen-form" action="examples/fullscreen/output.php" method="post" target="_blank" class="hidden-form">
+    	<input type="hidden" id="code-value" name="code-value" />
+    </form>
+
+</body>
+</html>
+
+ 171  
+code71.html
+@@ -0,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Live Demo: jQuery Get Text Contents of the Elements</title>
+	<meta name="description" content="Try and test HTML code online in a simple and easy way using our free HTML editor and see the results in real-time." />
+		<meta charset="UTF-8" />
+	<meta property="og:title" content="jQuery Get Text Contents of the Elements" />
+    <meta property="og:description" content="View the live example as well as try and test it using the online HTML editor." />
+	<meta property="fb:admins" content="100001054961582" />
+	<meta property="fb:app_id" content="1404574483159557" />
+	<meta property="og:image" content="/lib/images/signature.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" href="/lib/editor-5.5/css/codemirror.css" />
+    <link rel="stylesheet" href="/lib/icomoon/style.css">
+	<link rel="stylesheet" href="/lib/editor-5.5/css/default-1.4.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/lib/editor-5.5/js/codemirror.js"></script>
+	<script src="/lib/editor-5.5/js/utility.js"></script>
+	<script src="/lib/editor-5.5/mode/xml.js"></script>    
+	<script src="/lib/editor-5.5/mode/javascript.js"></script>
+	<script src="/lib/editor-5.5/mode/css.js"></script>
+	<script src="/lib/editor-5.5/mode/htmlmixed.js"></script>
+	<script src="/lib/editor-5.5/js/active-line.js"></script>
+	<script>
+		$(document).ready(function(){
+        	updatePreview();
+    	});    
+	</script>
+	<style>
+		.CodeMirror{font-size: 15px;line-height: normal;font-family: consolas,monospace;background: url("/lib/images/gutter-bg.gif") repeat-y -26px 0 transparent;}
+		.CodeMirror-activeline-background {background: #e8f2ff !important;}
+		.CodeMirror-scroll{overflow:auto;}
+		#carbonads{border: none !important;}
+	</style>
+		<!--Google Analytics-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-381VQH4NHT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-381VQH4NHT');
+</script>	<!--End:Google Analytics-->
+</head>
+<body>
+	<div class="header-wrapper">
+		<div class="header clearfix">
+			<div class="top-ad-box">
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9107540490929984"
+     crossorigin="anonymous"></script>
+<!-- Responsive Leaderboard -->
+<ins class="adsbygoogle"
+     style="display:block;width:100%;max-width:728px;height:90px"
+     data-ad-client="ca-pub-9107540490929984"
+     data-ad-slot="4302666817"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>							</div>
+			<div class="logo">
+				<img src="lib/images/codelab-logo.svg" alt="CodeLab" />
+			</div>
+			<div class="control-bar">
+				<div class="buttons">
+					<a onClick="updatePreview();" class="show-output">Show Output</a>
+					<a onClick="newWindow();" class="new-window" title="Show Output in Blank Tab"><span class="icon-new-window"></span></a>
+					<a onClick="downloadCode();" class="download-code" title="Download Source Code"><span class="icon-download"></span></a>
+					<a onClick="toggleView();" class="toggle-view" title="Change Editor Layout"><span class="icon-screen-rotation"></span></a>
+				</div>                            
+			</div>               
+		</div>
+	</div>
+	<div class="frame-box vr">
+		<div class="pane-wrapper clearfix">
+			<div class="pane" id="code-pane">
+				<div class="outer-area">
+					<span class="show-preview-pane">&nbsp;</span>
+					<div class="inner-area">
+						<input type="hidden" id="current-code" name="current-code" />
+						<textarea id="code" name="code">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;jQuery Get Text Contents of the Elements&lt;/title&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+$(document).ready(function(){
+    $(&quot;.btn-one&quot;).click(function(){
+        var str = $(&quot;p&quot;).text();
+        alert(str);
+    });
+    $(&quot;.btn-two&quot;).click(function(){
+       var str = $(&quot;p:first&quot;).text();
+       alert(str);
+    });
+    $(&quot;.btn-three&quot;).click(function(){
+       var str = $(&quot;p.extra&quot;).text();
+       alert(str);
+    });
+});
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn-one&quot;&gt;Get All Paragraph's Text&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn-two&quot;&gt;Get First Paragraph's Text&lt;/button&gt;
+	&lt;button type=&quot;button&quot; class=&quot;btn-three&quot;&gt;Get Last Paragraph's Text&lt;/button&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;p&gt;This is another paragraph.&lt;/p&gt;
+	&lt;p class=&quot;extra&quot;&gt;This is one more paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>	
+						<script>
+							var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+								mode: "text/html",
+								tabMode: "indent",
+								styleActiveLine: true,
+								lineNumbers: true,
+								lineWrapping: true
+							});
+						</script>									
+					</div>
+				</div>
+			</div>
+			<div class="pane" id="preview-pane">
+				<div class="outer-wrapper">
+					<span class="hide-preview-pane">&nbsp;</span>
+					<div class="output-area">
+						<iframe id="preview" name="preview"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="codelab-footer clearfix">		
+		<a href="/codelab.php?topic=sql&amp;file=select-all" class="switch-mode">Switch to SQL Mode</a>
+		<label class="auto-update"><input type="checkbox" id="check" /> Auto update</label>
+		<script>
+			var delay;
+			var checkbox = document.getElementById("check");
+			editor.on("change", function(){
+				editor.refresh();
+				if(checkbox.checked==true){            
+					clearTimeout(delay);
+					delay = setTimeout(updatePreview, 300); // Don't use parenthesis 
+				}
+			});
+			//setTimeout(updatePreview, 300);
+		</script>
+		<div class="social-widget-wrapper">
+			<!-- Social widget -->
+			<p class="social-link">Share this example with 
+	<a id="facebook-share-btn" href="https://facebook.com/sharer.php?u=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dget-text-contents-of-an-element" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Facebook</a>, 
+	<a id="twitter-share-btn" href="https://twitter.com/share?text=jQuery+Get+Text+Contents+of+the+Elements+-+&amp;url=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dget-text-contents-of-an-element" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Twitter</a>, 
+	<a id="google-share-btn" href="https://mail.google.com/mail/?view=cm&fs=1&su=jQuery+Get+Text+Contents+of+the+Elements&amp;body=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dget-text-contents-of-an-element" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600,top=150, left='+((screen.width/2)-300));return false;">Gmail</a>. Please give us a 
+	<a id="facebook-like-btn" href="/like.php" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=250,width=600,top=150, left='+((screen.width/2)-300));return false;">Like</a>, if you find it helpful.
+</p>    
+			<!-- End:Social widget -->
+		</div>
+	</div>
+
+    <form id="download-form" action="examples/bin/download.php" method="post" class="hidden-form">
+    	<input type="hidden" id="download-value" name="download-value" />
+    </form>
+    <form id="fullscreen-form" action="examples/fullscreen/output.php" method="post" target="_blank" class="hidden-form">
+    	<input type="hidden" id="code-value" name="code-value" />
+    </form>
+
+</body>
+</html>
+
+ 168  
+code72.html
+@@ -0,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Live Demo: jQuery Set Text Contents of the Elements</title>
+	<meta name="description" content="Try and test HTML code online in a simple and easy way using our free HTML editor and see the results in real-time." />
+		<meta charset="UTF-8" />
+	<meta property="og:title" content="jQuery Set Text Contents of the Elements" />
+    <meta property="og:description" content="View the live example as well as try and test it using the online HTML editor." />
+	<meta property="fb:admins" content="100001054961582" />
+	<meta property="fb:app_id" content="1404574483159557" />
+	<meta property="og:image" content="/lib/images/signature.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" href="/lib/editor-5.5/css/codemirror.css" />
+    <link rel="stylesheet" href="/lib/icomoon/style.css">
+	<link rel="stylesheet" href="/lib/editor-5.5/css/default-1.4.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/lib/editor-5.5/js/codemirror.js"></script>
+	<script src="/lib/editor-5.5/js/utility.js"></script>
+	<script src="/lib/editor-5.5/mode/xml.js"></script>    
+	<script src="/lib/editor-5.5/mode/javascript.js"></script>
+	<script src="/lib/editor-5.5/mode/css.js"></script>
+	<script src="/lib/editor-5.5/mode/htmlmixed.js"></script>
+	<script src="/lib/editor-5.5/js/active-line.js"></script>
+	<script>
+		$(document).ready(function(){
+        	updatePreview();
+    	});    
+	</script>
+	<style>
+		.CodeMirror{font-size: 15px;line-height: normal;font-family: consolas,monospace;background: url("/lib/images/gutter-bg.gif") repeat-y -26px 0 transparent;}
+		.CodeMirror-activeline-background {background: #e8f2ff !important;}
+		.CodeMirror-scroll{overflow:auto;}
+		#carbonads{border: none !important;}
+	</style>
+		<!--Google Analytics-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-381VQH4NHT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-381VQH4NHT');
+</script>	<!--End:Google Analytics-->
+</head>
+<body>
+	<div class="header-wrapper">
+		<div class="header clearfix">
+			<div class="top-ad-box">
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9107540490929984"
+     crossorigin="anonymous"></script>
+<!-- Responsive Leaderboard -->
+<ins class="adsbygoogle"
+     style="display:block;width:100%;max-width:728px;height:90px"
+     data-ad-client="ca-pub-9107540490929984"
+     data-ad-slot="4302666817"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>							</div>
+			<div class="logo">
+				<img src="lib/images/codelab-logo.svg" alt="CodeLab" />
+			</div>
+			<div class="control-bar">
+				<div class="buttons">
+					<a onClick="updatePreview();" class="show-output">Show Output</a>
+					<a onClick="newWindow();" class="new-window" title="Show Output in Blank Tab"><span class="icon-new-window"></span></a>
+					<a onClick="downloadCode();" class="download-code" title="Download Source Code"><span class="icon-download"></span></a>
+					<a onClick="toggleView();" class="toggle-view" title="Change Editor Layout"><span class="icon-screen-rotation"></span></a>
+				</div>                            
+			</div>               
+		</div>
+	</div>
+	<div class="frame-box vr">
+		<div class="pane-wrapper clearfix">
+			<div class="pane" id="code-pane">
+				<div class="outer-area">
+					<span class="show-preview-pane">&nbsp;</span>
+					<div class="inner-area">
+						<input type="hidden" id="current-code" name="current-code" />
+						<textarea id="code" name="code">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;jQuery Set Text Contents of the Elements&lt;/title&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+$(document).ready(function(){
+    $(&quot;.btn-one&quot;).click(function(){
+        $(&quot;p&quot;).text(&quot;This is demo text.&quot;);
+    });
+    $(&quot;.btn-two&quot;).click(function(){
+        $(&quot;p:first&quot;).text(&quot;This is another demo text.&quot;);
+    });
+    $(&quot;.btn-three&quot;).click(function(){
+        $(&quot;p.empty&quot;).text(&quot;This is one more demo text.&quot;);
+    });
+});
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn-one&quot;&gt;Set All Paragraph's Text&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn-two&quot;&gt;Set First Paragraph's Text&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn-three&quot;&gt;Set Empty Paragraph's Text&lt;/button&gt;
+    &lt;p&gt;This is a test paragraph.&lt;/p&gt;
+    &lt;p&gt;This is another test paragraph.&lt;/p&gt;
+    &lt;p class=&quot;empty&quot;&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>	
+						<script>
+							var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+								mode: "text/html",
+								tabMode: "indent",
+								styleActiveLine: true,
+								lineNumbers: true,
+								lineWrapping: true
+							});
+						</script>									
+					</div>
+				</div>
+			</div>
+			<div class="pane" id="preview-pane">
+				<div class="outer-wrapper">
+					<span class="hide-preview-pane">&nbsp;</span>
+					<div class="output-area">
+						<iframe id="preview" name="preview"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="codelab-footer clearfix">		
+		<a href="/codelab.php?topic=sql&amp;file=select-all" class="switch-mode">Switch to SQL Mode</a>
+		<label class="auto-update"><input type="checkbox" id="check" /> Auto update</label>
+		<script>
+			var delay;
+			var checkbox = document.getElementById("check");
+			editor.on("change", function(){
+				editor.refresh();
+				if(checkbox.checked==true){            
+					clearTimeout(delay);
+					delay = setTimeout(updatePreview, 300); // Don't use parenthesis 
+				}
+			});
+			//setTimeout(updatePreview, 300);
+		</script>
+		<div class="social-widget-wrapper">
+			<!-- Social widget -->
+			<p class="social-link">Share this example with 
+	<a id="facebook-share-btn" href="https://facebook.com/sharer.php?u=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dset-text-contents-of-elements" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Facebook</a>, 
+	<a id="twitter-share-btn" href="https://twitter.com/share?text=jQuery+Set+Text+Contents+of+the+Elements+-+&amp;url=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dset-text-contents-of-elements" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Twitter</a>, 
+	<a id="google-share-btn" href="https://mail.google.com/mail/?view=cm&fs=1&su=jQuery+Set+Text+Contents+of+the+Elements&amp;body=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dset-text-contents-of-elements" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600,top=150, left='+((screen.width/2)-300));return false;">Gmail</a>. Please give us a 
+	<a id="facebook-like-btn" href="/like.php" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=250,width=600,top=150, left='+((screen.width/2)-300));return false;">Like</a>, if you find it helpful.
+</p>    
+			<!-- End:Social widget -->
+		</div>
+	</div>
+
+    <form id="download-form" action="examples/bin/download.php" method="post" class="hidden-form">
+    	<input type="hidden" id="download-value" name="download-value" />
+    </form>
+    <form id="fullscreen-form" action="examples/fullscreen/output.php" method="post" target="_blank" class="hidden-form">
+    	<input type="hidden" id="code-value" name="code-value" />
+    </form>
+
+</body>
+</html>
+
+ 167  
+code73.html
+@@ -0,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Live Demo: jQuery Get HTML Contents of an Element</title>
+	<meta name="description" content="Try and test HTML code online in a simple and easy way using our free HTML editor and see the results in real-time." />
+		<meta charset="UTF-8" />
+	<meta property="og:title" content="jQuery Get HTML Contents of an Element" />
+    <meta property="og:description" content="View the live example as well as try and test it using the online HTML editor." />
+	<meta property="fb:admins" content="100001054961582" />
+	<meta property="fb:app_id" content="1404574483159557" />
+	<meta property="og:image" content="/lib/images/signature.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" href="/lib/editor-5.5/css/codemirror.css" />
+    <link rel="stylesheet" href="/lib/icomoon/style.css">
+	<link rel="stylesheet" href="/lib/editor-5.5/css/default-1.4.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/lib/editor-5.5/js/codemirror.js"></script>
+	<script src="/lib/editor-5.5/js/utility.js"></script>
+	<script src="/lib/editor-5.5/mode/xml.js"></script>    
+	<script src="/lib/editor-5.5/mode/javascript.js"></script>
+	<script src="/lib/editor-5.5/mode/css.js"></script>
+	<script src="/lib/editor-5.5/mode/htmlmixed.js"></script>
+	<script src="/lib/editor-5.5/js/active-line.js"></script>
+	<script>
+		$(document).ready(function(){
+        	updatePreview();
+    	});    
+	</script>
+	<style>
+		.CodeMirror{font-size: 15px;line-height: normal;font-family: consolas,monospace;background: url("/lib/images/gutter-bg.gif") repeat-y -26px 0 transparent;}
+		.CodeMirror-activeline-background {background: #e8f2ff !important;}
+		.CodeMirror-scroll{overflow:auto;}
+		#carbonads{border: none !important;}
+	</style>
+		<!--Google Analytics-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-381VQH4NHT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-381VQH4NHT');
+</script>	<!--End:Google Analytics-->
+</head>
+<body>
+	<div class="header-wrapper">
+		<div class="header clearfix">
+			<div class="top-ad-box">
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9107540490929984"
+     crossorigin="anonymous"></script>
+<!-- Responsive Leaderboard -->
+<ins class="adsbygoogle"
+     style="display:block;width:100%;max-width:728px;height:90px"
+     data-ad-client="ca-pub-9107540490929984"
+     data-ad-slot="4302666817"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>							</div>
+			<div class="logo">
+				<img src="lib/images/codelab-logo.svg" alt="CodeLab" />
+			</div>
+			<div class="control-bar">
+				<div class="buttons">
+					<a onClick="updatePreview();" class="show-output">Show Output</a>
+					<a onClick="newWindow();" class="new-window" title="Show Output in Blank Tab"><span class="icon-new-window"></span></a>
+					<a onClick="downloadCode();" class="download-code" title="Download Source Code"><span class="icon-download"></span></a>
+					<a onClick="toggleView();" class="toggle-view" title="Change Editor Layout"><span class="icon-screen-rotation"></span></a>
+				</div>                            
+			</div>               
+		</div>
+	</div>
+	<div class="frame-box vr">
+		<div class="pane-wrapper clearfix">
+			<div class="pane" id="code-pane">
+				<div class="outer-area">
+					<span class="show-preview-pane">&nbsp;</span>
+					<div class="inner-area">
+						<input type="hidden" id="current-code" name="current-code" />
+						<textarea id="code" name="code">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;jQuery Get HTML Contents of an Element&lt;/title&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+$(document).ready(function(){
+    $(&quot;.btn-one&quot;).click(function(){
+        var str = $(&quot;p&quot;).html();
+        alert(str);
+    });
+    $(&quot;.btn-two&quot;).click(function(){
+        var str = $(&quot;#container&quot;).html();
+        alert(str);
+    });
+});
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn-one&quot;&gt;Get Paragraph's HTML Contents&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn-two&quot;&gt;Get Container's HTML Contents&lt;/button&gt;
+    &lt;div id=&quot;container&quot;&gt;
+        &lt;h1&gt;Hello World!&lt;/h1&gt;
+        &lt;p&gt;The quick &lt;b&gt;brown fox&lt;/b&gt; jumps over the lazy dog.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>	
+						<script>
+							var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+								mode: "text/html",
+								tabMode: "indent",
+								styleActiveLine: true,
+								lineNumbers: true,
+								lineWrapping: true
+							});
+						</script>									
+					</div>
+				</div>
+			</div>
+			<div class="pane" id="preview-pane">
+				<div class="outer-wrapper">
+					<span class="hide-preview-pane">&nbsp;</span>
+					<div class="output-area">
+						<iframe id="preview" name="preview"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="codelab-footer clearfix">		
+		<a href="/codelab.php?topic=sql&amp;file=select-all" class="switch-mode">Switch to SQL Mode</a>
+		<label class="auto-update"><input type="checkbox" id="check" /> Auto update</label>
+		<script>
+			var delay;
+			var checkbox = document.getElementById("check");
+			editor.on("change", function(){
+				editor.refresh();
+				if(checkbox.checked==true){            
+					clearTimeout(delay);
+					delay = setTimeout(updatePreview, 300); // Don't use parenthesis 
+				}
+			});
+			//setTimeout(updatePreview, 300);
+		</script>
+		<div class="social-widget-wrapper">
+			<!-- Social widget -->
+			<p class="social-link">Share this example with 
+	<a id="facebook-share-btn" href="https://facebook.com/sharer.php?u=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dget-html-contents-of-an-element" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Facebook</a>, 
+	<a id="twitter-share-btn" href="https://twitter.com/share?text=jQuery+Get+HTML+Contents+of+an+Element+-+&amp;url=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dget-html-contents-of-an-element" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Twitter</a>, 
+	<a id="google-share-btn" href="https://mail.google.com/mail/?view=cm&fs=1&su=jQuery+Get+HTML+Contents+of+an+Element&amp;body=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dget-html-contents-of-an-element" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600,top=150, left='+((screen.width/2)-300));return false;">Gmail</a>. Please give us a 
+	<a id="facebook-like-btn" href="/like.php" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=250,width=600,top=150, left='+((screen.width/2)-300));return false;">Like</a>, if you find it helpful.
+</p>    
+			<!-- End:Social widget -->
+		</div>
+	</div>
+
+    <form id="download-form" action="examples/bin/download.php" method="post" class="hidden-form">
+    	<input type="hidden" id="download-value" name="download-value" />
+    </form>
+    <form id="fullscreen-form" action="examples/fullscreen/output.php" method="post" target="_blank" class="hidden-form">
+    	<input type="hidden" id="code-value" name="code-value" />
+    </form>
+
+</body>
+</html>
+
+ 157  
+code74.html
+@@ -0,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Live Demo: jQuery Set HTML Contents of the Element</title>
+	<meta name="description" content="Try and test HTML code online in a simple and easy way using our free HTML editor and see the results in real-time." />
+		<meta charset="UTF-8" />
+	<meta property="og:title" content="jQuery Set HTML Contents of the Element" />
+    <meta property="og:description" content="View the live example as well as try and test it using the online HTML editor." />
+	<meta property="fb:admins" content="100001054961582" />
+	<meta property="fb:app_id" content="1404574483159557" />
+	<meta property="og:image" content="/lib/images/signature.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" href="/lib/editor-5.5/css/codemirror.css" />
+    <link rel="stylesheet" href="/lib/icomoon/style.css">
+	<link rel="stylesheet" href="/lib/editor-5.5/css/default-1.4.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/lib/editor-5.5/js/codemirror.js"></script>
+	<script src="/lib/editor-5.5/js/utility.js"></script>
+	<script src="/lib/editor-5.5/mode/xml.js"></script>    
+	<script src="/lib/editor-5.5/mode/javascript.js"></script>
+	<script src="/lib/editor-5.5/mode/css.js"></script>
+	<script src="/lib/editor-5.5/mode/htmlmixed.js"></script>
+	<script src="/lib/editor-5.5/js/active-line.js"></script>
+	<script>
+		$(document).ready(function(){
+        	updatePreview();
+    	});    
+	</script>
+	<style>
+		.CodeMirror{font-size: 15px;line-height: normal;font-family: consolas,monospace;background: url("/lib/images/gutter-bg.gif") repeat-y -26px 0 transparent;}
+		.CodeMirror-activeline-background {background: #e8f2ff !important;}
+		.CodeMirror-scroll{overflow:auto;}
+		#carbonads{border: none !important;}
+	</style>
+		<!--Google Analytics-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-381VQH4NHT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-381VQH4NHT');
+</script>	<!--End:Google Analytics-->
+</head>
+<body>
+	<div class="header-wrapper">
+		<div class="header clearfix">
+			<div class="top-ad-box">
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9107540490929984"
+     crossorigin="anonymous"></script>
+<!-- Responsive Leaderboard -->
+<ins class="adsbygoogle"
+     style="display:block;width:100%;max-width:728px;height:90px"
+     data-ad-client="ca-pub-9107540490929984"
+     data-ad-slot="4302666817"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>							</div>
+			<div class="logo">
+				<img src="lib/images/codelab-logo.svg" alt="CodeLab" />
+			</div>
+			<div class="control-bar">
+				<div class="buttons">
+					<a onClick="updatePreview();" class="show-output">Show Output</a>
+					<a onClick="newWindow();" class="new-window" title="Show Output in Blank Tab"><span class="icon-new-window"></span></a>
+					<a onClick="downloadCode();" class="download-code" title="Download Source Code"><span class="icon-download"></span></a>
+					<a onClick="toggleView();" class="toggle-view" title="Change Editor Layout"><span class="icon-screen-rotation"></span></a>
+				</div>                            
+			</div>               
+		</div>
+	</div>
+	<div class="frame-box vr">
+		<div class="pane-wrapper clearfix">
+			<div class="pane" id="code-pane">
+				<div class="outer-area">
+					<span class="show-preview-pane">&nbsp;</span>
+					<div class="inner-area">
+						<input type="hidden" id="current-code" name="current-code" />
+						<textarea id="code" name="code">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;jQuery Set HTML Contents of the Element&lt;/title&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+$(document).ready(function(){
+    $(&quot;button&quot;).click(function(){
+        $(&quot;body&quot;).html(&quot;&lt;p&gt;Hello World!&lt;/p&gt;&quot;);
+    });
+});
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button type=&quot;button&quot;&gt;Write Message&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>	
+						<script>
+							var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+								mode: "text/html",
+								tabMode: "indent",
+								styleActiveLine: true,
+								lineNumbers: true,
+								lineWrapping: true
+							});
+						</script>									
+					</div>
+				</div>
+			</div>
+			<div class="pane" id="preview-pane">
+				<div class="outer-wrapper">
+					<span class="hide-preview-pane">&nbsp;</span>
+					<div class="output-area">
+						<iframe id="preview" name="preview"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="codelab-footer clearfix">		
+		<a href="/codelab.php?topic=sql&amp;file=select-all" class="switch-mode">Switch to SQL Mode</a>
+		<label class="auto-update"><input type="checkbox" id="check" /> Auto update</label>
+		<script>
+			var delay;
+			var checkbox = document.getElementById("check");
+			editor.on("change", function(){
+				editor.refresh();
+				if(checkbox.checked==true){            
+					clearTimeout(delay);
+					delay = setTimeout(updatePreview, 300); // Don't use parenthesis 
+				}
+			});
+			//setTimeout(updatePreview, 300);
+		</script>
+		<div class="social-widget-wrapper">
+			<!-- Social widget -->
+			<p class="social-link">Share this example with 
+	<a id="facebook-share-btn" href="https://facebook.com/sharer.php?u=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dset-html-contents-of-elements" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Facebook</a>, 
+	<a id="twitter-share-btn" href="https://twitter.com/share?text=jQuery+Set+HTML+Contents+of+the+Element+-+&amp;url=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dset-html-contents-of-elements" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Twitter</a>, 
+	<a id="google-share-btn" href="https://mail.google.com/mail/?view=cm&fs=1&su=jQuery+Set+HTML+Contents+of+the+Element&amp;body=https://www.tutorialrepublic.com%2Fcodelab.php%3Ftopic%3Djquery%26file%3Dset-html-contents-of-elements" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600,top=150, left='+((screen.width/2)-300));return false;">Gmail</a>. Please give us a 
+	<a id="facebook-like-btn" href="/like.php" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=250,width=600,top=150, left='+((screen.width/2)-300));return false;">Like</a>, if you find it helpful.
+</p>    
+			<!-- End:Social widget -->
+		</div>
+	</div>
+
+    <form id="download-form" action="examples/bin/download.php" method="post" class="hidden-form">
+    	<input type="hidden" id="download-value" name="download-value" />
+    </form>
+    <form id="fullscreen-form" action="examples/fullscreen/output.php" method="post" target="_blank" class="hidden-form">
+    	<input type="hidden" id="code-value" name="code-value" />
+    </form>
+
+</body>
+</html>
+
+ 21  
+code8.html
+@@ -0,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Move one DIV element inside another.</title>
+</head>
+<body>
+<div id="nonSelected">
+<!--Declaring BUTTON TAGS -->
+<button id="btnDefault" onclick="moveButton(this)" type="button">Button1</button>
+    <button id="btnPrimary" onclick="moveButton(this)" type="button" >Button2</button>
+
+	  <button id="btnDanger" onclick="moveButton(this)" type="button">Button3</button>
+
+	  </div>
+	  <div id="selected">
+	  </div>
+	  </body>
+	  </html>
+ 18  
+code9.html
+@@ -0,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Add li in an existing ul.</title>
+  </head>
+  <body>
+  <div id="header">
+  <ul>
+  <li><a href="https://www.w3resource.com/python/python-tutorial.php">Python</a></li>
+  <li><a href="https://www.w3resource.com/php/php-home.php">PHP</a></li>
+  </ul>
+  </div>
+  <input type="button" value="Click to add new li element" onclick="new_element()" />
+  </body>
+  </html>
+0 comments on commit 9b0dc99
+@sukanprp3323
+ 
+Add heading textAdd bold text, <Ctrl+b>Add italic text, <Ctrl+i>
+Add a quote, <Ctrl+Shift+.>Add code, <Ctrl+e>Add a link, <Ctrl+k>
+Add a bulleted list, <Ctrl+Shift+8>Add a numbered list, <Ctrl+Shift+7>Add a task list, <Ctrl+Shift+l>
+Directly mention a user or team
+Reference an issue, pull request, or discussion
+Add saved reply
